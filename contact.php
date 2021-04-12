@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
     $subject = "New contact from $name";
 
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://anthonystanton.github.io/Computers4U/index.php?success=-1#form");
+        header("Location: https://anthonystanton.github.io/testrepo123/index.php?success=-1#form");
         exit;
     }
 
@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
 
     mail($emailto,$subject,$message, $headers);
 
-    header("Location: https://anthonystanton.github.io/Computers4U/index.php?success=1#form");
+    header("Location: https://anthonystanton.github.io/testrepo123/index.php?success=1#form");
 
 }
 ?>
