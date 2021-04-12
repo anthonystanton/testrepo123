@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
 
     $email_from = 'anthonystanton@gmail.com';
 
-    $email_headers = "From: $name <$email_from>";
+    $headers = "From: $name <$email_from>";
 
     mail($emailto,$subject,$message, $headers);
 
